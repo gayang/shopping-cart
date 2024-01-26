@@ -1,0 +1,46 @@
+.sub-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, auto));
+    height: auto;
+    gap: 10px;
+    grid-template-areas:
+        "c x "
+        "c x ";
+    margin: 0 auto;
+}
+
+.form {
+    grid-area: x;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 50;
+}
+
+div.form-group label {
+    width: 120px;
+}
+.form-control {
+    margin: 0 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+    padding: 6px 10px;
+
+    // &:hover {
+    //     border-color: #c2bfbf;
+    // }
+
+    // &:focus {
+    //     border-color: #888787;
+    // }
+}
+
+
+
+.profile label {
+    width: 150px
+}

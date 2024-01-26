@@ -1,0 +1,57 @@
+@use "../variables/color";
+
+
+@mixin hover-effect($bg-color) {
+    background-color: $bg-color;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($ba-color, 20);
+    }
+}
+
+
+
+input #file-upload-button {
+    display: none;
+}
+
+.form-btn {
+    border-radius: 25px;
+    padding: 3px 12px;
+    height: 38px;
+    font-size: 1em;
+    border: 3px solid #ccc;
+
+    &:hover {
+        border-color: #c2bfbf;
+    }
+
+    &:focus {
+        border-color: #888787;
+    }
+}
+
+.cart-detail-btn {
+    height: 35px;
+    color: #4b4747;
+    border-radius: 50px;
+    padding: 0;
+    border: none;
+    font-size: 1em;
+    background-color: color.$btn-bg-color;
+    border: 3px solid color.$btn-br-color;
+    padding:0 15px;
+
+    &:hover {
+        border: 3px solid color.$btn-br-color-hover;
+    }
+}
+.checkout{
+    color:color.$white;
+    background-color: color.$carmine;
+    border: 3px solid color.$white;
+    &:hover {
+            border: 3px solid color.$apricot;
+    }
+}

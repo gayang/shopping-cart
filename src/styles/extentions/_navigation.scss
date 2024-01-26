@@ -1,0 +1,33 @@
+@use "../variables/font";
+@use "../variables/color";
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 15px 20px;
+    background-color: color.$nav-color-default;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1em;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    input {
+        border-bottom: 1px solid #ccc;
+        border-radius: 40px;
+        box-shadow: 0;
+        width: 400px;
+        padding: 10px 20px;
+    }
+}
+.admin-nav {
+    display: flex;
+    justify-content: space-between;
+}
